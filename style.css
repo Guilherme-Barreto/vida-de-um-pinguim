@@ -1,0 +1,41 @@
+@keyframes rodar {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    70% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+body {
+    background-image: linear-gradient(to bottom, #270547, #fc3838, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1,h2,p {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.susto {
+    padding-top: 100em;
+    width: 700px;
+    height: 400px
+}
+
+.pinguim {
+    padding-top: 10em;
+    padding-bottom: 100em;
+    width: 600px;
+    height: 500px;
+    animation-name: rodar;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
